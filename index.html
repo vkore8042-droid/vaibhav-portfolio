@@ -1,201 +1,487 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Vaibhav Kore - Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<script>
-function showMessage() {
-    document.getElementById("message").innerHTML =
-        "Welcome to Vaibhav Kore's Portfolio!";}
-function readMore() {
-    const text = document.getElementById("moreAbout");
-    const button = event.target;
+    <!-- Mobile Menu Button -->
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
 
-    if (text.style.display === "none") {
-        text.style.display = "block";
-        button.innerHTML = "Read Less";
-    } else {
-        text.style.display = "none";
-        button.innerHTML = "Read More";
-    }
-}
+    <!-- Sidebar -->
+    <aside class="sidebar">
 
-function toggleTheme() {
-    document.body.classList.toggle("dark-mode");
-
-    const button = document.getElementById("themeButton");
-
-    if (document.body.classList.contains("dark-mode")) {
-        button.innerHTML = "☀️ Light Mode";
-    } else {
-        button.innerHTML = "🌙 Dark Mode";
-    }
-}
-</script>
-<footer>
-    <p>© 2026 Vaibhav Kore. All Rights Reserved.</p>
-    <p>Personal Portfolio Website</p>
-    <a href="#home" class="top-button">Back to Top ↑</a>
-</footer>
-    <div class="home" id="home"></div>
-    <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#education">Education</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<h2 id="about">About Me</h2>
-
-<p>
-    My name is Vaibhav Kore. I am a Computer Engineering student.
-</p>
-
-<p id="moreAbout" style="display: none;">
-    I have completed my Diploma in Computer Engineering.
-    I am interested in programming, web development and learning new technologies.
-</p>
-
-<button onclick="readMore()">Read More</button>
-<h2 id="skills">My Skills</h2>
-
-<div class="skills">
-
-    <div class="skill-card">
-        <h3>Java</h3>
-        <div class="progress">
-            <div class="progress-bar java">60%</div>
-        </div>
-    </div>
-
-    <div class="skill-card">
-        <h3>HTML</h3>
-        <div class="progress">
-            <div class="progress-bar html">80%</div>
-        </div>
-    </div>
-
-    <div class="skill-card">
-        <h3>CSS</h3>
-        <div class="progress">
-            <div class="progress-bar css">70%</div>
-        </div>
-    </div>
-
-    <div class="skill-card">
-        <h3>JavaScript</h3>
-        <div class="progress">
-            <div class="progress-bar javascript">50%</div>
-        </div>
-    </div>
-
+        <div class="profile-img">
+    <img src="images/profile.jpeg" alt="Profile Photo">
 </div>
-</div>
-<h2 id="projects">My Projects</h2>
 
-<div class="project-card">
-    <h3>Personal Portfolio Website</h3>
+            <h2>vaibhav kore</h2>
+            <p>Computer Engineer</p>
+        </div>
+<!-- Social Media -->
+<div class="social">
+    <a href="https://www.instagram.com/vaibhav__0922?stkn=b2hiYmt1cGkzbHM1" target="_blank" title="Instagram">◎</a>
+
+    <a href="https://www.linkedin.com/in/vaibhav-kore-0922" target="_blank" title="LinkedIn">in</a>
+
+    <a href="https://github.com/vaibhav0922" target="_blank" title="GitHub">Git</a>
+
+    <a href="https://wa.me/9604978956" target="_blank" title="WhatsApp">☏</a>
+</div>
+
+        <!-- Navigation -->
+        <nav>
+            <a href="#home">🏠 <span>Home</span></a>
+            <a href="#about">👤 <span>About</span></a>
+            <a href="#resume">📄 <span>Resume</span></a>
+            <a href="#skills">💻 <span>Skills</span></a>
+            <a href="#projects">🚀 <span>Projects</span></a>
+            <a href="#services">🛠️ <span>Services</span></a>
+            <a href="#contact">📞 <span>Contact</span></a>
+        </nav>
+
+    </aside>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <section id="home" class="home">
+            <div class="hero-text">
+    <h1>Vaibhav Kore</h1>
 
     <p>
-        A personal portfolio website created using HTML, CSS and JavaScript.
+        I'm a
+        <span id="typing-text">Computer Engineer</span>
     </p>
 
-    <a href="https://vkore8042-droid.github.io/vaibhav-portfolio/"
-       target="_blank"
-       class="project-button">
-       🌐 Live Website
-    </a>
+    <p class="hero-description">
+        I build modern websites and applications.
+    </p>
 
-    <a href="https://github.com/vkore8042-droid/vaibhav-portfolio"
-       target="_blank"
-       class="project-button">
-       💻 GitHub
-    </a>
+    <a href="#about" class="hero-btn">Explore My Portfolio</a>
 </div>
-<h2 id="education">My Education</h2>
+        </section>
+        <!-- About Section -->
+            <div class="progress">
+                <div class="progress-bar cpp"></div>
+            </div>
+        </div>
 
-<div class="education">
+    </div>
+       <!-- Skills Section -->
+<section id="skills" class="skills-section">
 
-    <h3>Diploma in Computer Engineering</h3>
-    <p>Diploma Completed</p>
+    <div class="section-title">
+        <p>MY SKILLS</p>
+        <h2>What I Know</h2>
+    </div>
 
-    <h3>B.E. Computer Engineering</h3>
-    <p>Currently Studying</p>
+    <div class="skills-container">
 
-</div>
-<h2 id="personal-info">Personal Information</h2>
-<p><strong>Name:</strong> Vaibhav Kore</p>
+        <div class="skill-card">
+            <div class="skill-top">
+                <h3>HTML</h3>
+                <span>90%</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar html"></div>
+            </div>
+        </div>
 
-<p><strong>Age:</strong> 20 </p>
+        <div class="skill-card">
+            <div class="skill-top">
+                <h3>CSS</h3>
+                <span>85%</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar css"></div>
+            </div>
+        </div>
 
-<p><strong>Location:</strong>Nagzarwadi,dharashiv,Mharashtra,413507</p>
+        <div class="skill-card">
+            <div class="skill-top">
+                <h3>JavaScript</h3>
+                <span>70%</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar javascript"></div>
+            </div>
+        </div>
 
-<p><strong>Course:</strong> B.E. Computer Engineering</p>
+        <div class="skill-card">
+            <div class="skill-top">
+                <h3>Python</h3>
+                <span>65%</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar python"></div>
+            </div>
+        </div>
 
-<p><strong>College:</strong> Shivnagar Vidya Prasarak Mandal's College of Engineering, Malegaon-Baramati</p>
+        <div class="skill-card">
+            <div class="skill-top">
+                <h3>Java</h3>
+                <span>60%</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar java"></div>
+            </div>
+        </div>
 
-<h2 id="contact">Contact Me</h2>
-<p>Email: vkore8042@gmail.com</p>
+        <div class="skill-card">
+            <div class="skill-top">
+                <h3>C / C++</h3>
+                <span>75%</span>
+                 <div class="progress">
+                <div class="progress-bar java"></div>
+            </div>
+            </div>
+</section>
+<!-- Projects Section -->
+<section id="projects" class="projects-section">
 
-<p>LinkedIn: https://www.linkedin.com/in/vaibhav-kore-2512b7435</p>
-<p>GitHub: https://github.com/vkore8042-droid/vaibhav-portfolio</p>
+    <div class="section-title">
+        <p>MY PROJECTS</p>
+        <h2>What I Have Built</h2>
+    </div>
+
+    <div class="projects-container">
+
+        <div class="project-card">
+            <div class="project-icon">🌐</div>
+
+            <h3>Personal Portfolio</h3>
+
+            <p>
+                A modern responsive portfolio website created using
+                HTML, CSS and JavaScript.
+            </p>
+
+            <div class="project-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+
+            <a href="#" class="project-btn">View Project →</a>
+        </div>
 
 
-<h2 id="device">My Device</h2>
-<p><strong>Laptop:</strong> HP Pavilion 15 </p>
+        <div class="project-card">
+            <div class="project-icon">🔍</div>
 
-<p><strong>Processor:</strong> Intel Core i5-10210U</p>
+            <h3>Student Search App</h3>
 
-<p><strong>RAM:</strong> 16 GB DDR4</p>
+            <p>
+                A simple application for searching and displaying
+                student information.
+            </p>
 
-<p><strong>Storage:</strong> 512 GB SSD</p>
+            <div class="project-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
 
-<p><strong>Mobile:</strong> Redmi 12 5g</p>
+            <a href="#" class="project-btn">View Project →</a>
+        </div>
 
-<h2 id="hobbies">My Hobbies</h2>
 
-<ul>
-    <li>Learning New Technology</li>
-    <li>Coding</li>
-    <li>Watching Movies</li>
-</ul>
+        <div class="project-card">
+            <div class="project-icon">📱</div>
 
-<h2 id="career-goal">My Career Goal</h2>
+            <h3>Mobile App Concept</h3>
 
-<p>
-    My goal is to become a successful software developer
-    and build useful technology solutions.
-</p>   
+            <p>
+                A clean and user-friendly mobile application concept
+                designed for students.
+            </p>
 
-<p>
-    My name is Vaibhav Kore.
-    I am a Computer Engineering student.
-    I am interested in technology, programming and web development.
-</p>
-    <div class="home">
+            <div class="project-tech">
+                <span>Java</span>
+                <span>UI</span>
+                <span>Logic</span>
+            </div>
 
-        <img src="vaibhav.jpg" alt="Vaibhav Kore">
-
-        <h1>Hi, I'm Vaibhav Kore</h1>
-
-        <h2>Computer Engineering Student</h2>
-
-        <p>
-            Welcome to my personal portfolio website.
-        </p>
-        <button onclick="showMessage()">Click Me</button>
-
-<p id="message"></p>
-<button id="themeButton" onclick="toggleTheme()">🌙 Dark Mode</button>
-<a href="#projects" class="projects-button">🚀 View My Projects</a>
+            <a href="#" class="project-btn">View Project →</a>
+        </div>
 
     </div>
 
-</body>
+</section>
+<!-- Resume Section -->
+<section id="resume" class="resume-section">
 
+    <div class="section-title">
+        <p>RESUME</p>
+        <h2>My Education & Journey</h2>
+    </div>
+
+    <div class="resume-container">
+
+        <!-- Education -->
+        <div class="resume-box">
+
+            <h3>🎓 Education</h3>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <span>2025 - Present</span>
+                    <h4>BE Computer Engineering</h4>
+                    <p>
+                        Currently pursuing Bachelor of Engineering
+                        in Computer Engineering.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <span>Previous Education</span>
+                    <h4>Diploma in Computer Engineering</h4>
+                    <p>
+                        Completed diploma in Computer Engineering.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Career -->
+        <div class="resume-box">
+
+            <h3>💼 Career Goal</h3>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <span>My Goal</span>
+                    <h4>Software / Web Developer</h4>
+                    <p>
+                        I want to build modern websites,
+                        applications and software using
+                        modern technologies.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <span>Currently Learning</span>
+                    <h4>Programming & Development</h4>
+                    <p>
+                        Learning programming, web development,
+                        Java, Python and other technologies.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="resume-download">
+        <a href="#" class="hero-btn">Download Resume</a>
+    </div>
+
+</section>
+<!-- Services Section -->
+<section id="services" class="services-section">
+
+    <div class="section-title">
+        <p>MY SERVICES</p>
+        <h2>What I Can Do</h2>
+    </div>
+
+    <div class="services-container">
+
+        <div class="service-card">
+            <div class="service-icon">🌐</div>
+            <h3>Web Development</h3>
+            <p>
+                Creating modern, responsive and user-friendly
+                websites using HTML, CSS and JavaScript.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">📱</div>
+            <h3>App Development</h3>
+            <p>
+                Building useful and simple applications with
+                clean design and good functionality.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">💻</div>
+            <h3>Programming</h3>
+            <p>
+                Developing programs and solving problems using
+                languages like C, C++, Java and Python.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🎨</div>
+            <h3>UI Design</h3>
+            <p>
+                Designing clean, attractive and easy-to-use
+                interfaces for websites and applications.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+
+    <div class="section-title">
+        <p>CONTACT</p>
+        <h2>Get In Touch</h2>
+    </div>
+
+    <div class="contact-container">
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+
+            <div class="contact-card">
+                <div class="contact-icon">📧</div>
+                <div>
+                    <h3>Email</h3>
+                    <p>vkore8042@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">📱</div>
+                <div>
+                    <h3>Phone</h3>
+                    <p>+91 9604978956</p>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">📍</div>
+                <div>
+                    <h3>Location</h3>
+                    <p>India</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Contact Form -->
+        <form class="contact-form">
+
+            <input
+                type="text"
+                placeholder="your name"
+                required
+            >
+
+            <input
+                type="email"
+                placeholder="your email"
+                required
+            >
+
+            <input
+                type="text"
+                placeholder="Subject"
+                required
+            >
+
+            <textarea
+                rows="6"
+                placeholder="Your Message"
+                required
+            ></textarea>
+
+            <button type="submit">
+                Send Message →
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Vaibhav Kore. All Rights Reserved.</p>
+</footer>
+
+
+<section id="about" class="about-section">
+
+    <div class="section-title">
+        <p>ABOUT ME</p>
+        <h2>Know More About Me</h2>
+    </div>
+
+    <div class="about-content">
+
+        <div class="about-text">
+            <h3>I'm a Computer Engineering Student</h3>
+
+            <p>
+                Hello! I'm Vaibhav Kore, a Computer Engineering student
+                interested in web development, app development and
+                programming.
+            </p>
+
+            <p>
+                I enjoy learning new technologies and building useful,
+                modern and responsive applications.
+            </p>
+        </div>
+
+        <div class="about-info">
+
+            <div class="info-card">
+                <strong>Name:</strong>
+                <span>Vaibhav Kore</span>
+            </div>
+
+            <div class="info-card">
+                <strong>Education:</strong>
+                <span>BE Computer Engineering</span>
+            </div>
+
+            <div class="info-card">
+                <strong>Year:</strong>
+                <span>2nd Year</span>
+            </div>
+
+            <div class="info-card">
+                <strong>Interest:</strong>
+                <span>Web & App Development</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+    <!-- Scroll To Top Button -->
+<button id="scrollTopBtn" onclick="scrollToTop()">↑</button>
+
+</body>
 </html>
